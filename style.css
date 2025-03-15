@@ -25,7 +25,7 @@ header {
     background-image: url('imagens/fundo.png');
     background-size: cover;
     background-position: center;
-    height: 580px;
+    height: 500px;
     width: auto;
 }
 
@@ -118,8 +118,8 @@ header {
 }
 
 .slide img {
-    width: 80%;
-    height: 100%;
+    width: 60%;
+    height: auto;
 }
 
 .banner-text {
