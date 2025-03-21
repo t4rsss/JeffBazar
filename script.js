@@ -65,3 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showSlide(currentIndex);
 });
+
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+

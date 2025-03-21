@@ -13,6 +13,85 @@ body {
 main {
     flex: 1;
 }
+
+/* Sidebar oculta inicialmente (fora da tela) */
+.sidebar {
+    position: fixed;
+    right: -400px; /* Escondida fora da tela */
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background:white; /* Degradê da esquerda para a direita */
+    color: #175676;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.4s ease-in-out; /* Transição suave */
+    z-index: 9999; /* Garante que fica por cima de tudo */
+}
+
+/* Quando ativa, aparece na tela */
+.sidebar.active {
+    right: 0;
+}
+
+/* Botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #175676;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Título do menu */
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+/* Lista de links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #175676;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: rgba(75, 163, 195, 0.0);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #4BA3C3;
+    color:white;
+}
+
+/* Botão de abrir menu */
+.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000; /* Garante que fica por cima */
+}
+
+
+
+
 .transparent{
     background-color:rgba(255, 255, 255, 0.05) ;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -325,7 +404,6 @@ footer {
 }
 
 .footer-social .social-icons img {
-    top: 50px;
     max-width: 220px; 
     cursor: pointer;
 }
