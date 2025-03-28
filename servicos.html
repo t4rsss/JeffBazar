@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Jeff Bazar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <img  src="imagens/logo.png" alt="Plaza Logo" style="width: 150px; height: auto;">
+    <h2>Menu</h2>
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+    <ul>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="https://wa.me/5521965951620">Anuncie Aqui</a></li>
+    </ul>
+</div>
+<div class="header2">
+    <div class="transparent">
+        <div class="header-container">
+            <div class="logo">
+              <a href="index.html">
+                <img class="logo1" src="imagens/logobranca.png" alt="Plaza Logo">
+              </a>              
+            </div>
+            <div class="header-icons">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="imagens/Instagram.png" alt="Instagram" class="icon-header" style="width: 30px; height: 30px;">
+              </a>
+              <a href="https://wa.me/5521965951620" target="_blank">
+                <img src="imagens/WhatsApp.png" alt="WhatsApp" class="icon-header" style="width: 35px; height: 35px;">
+              </a>
+                <div class="divider"></div>
+                <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+            </div> 
+        </div>
+    </div> 
+</div>
+
+<div class="breadcrumb-section">
+    <nav class="breadcrumb">
+      <a href="index.html">Página Inicial</a> <span>›</span> <span class="active">Serviços</span>
+    </nav>
+    <h1 class="page-title">Serviços</h1>
+  </div>
+  
+  <section class="lojas-filtro">
+    <div class="container">
+      <div class="dark-box">
+        <div class="filtros">
+          <div class="input-busca">
+            <input id="searchInput" type="text" placeholder="Busque por nome" />
+            <span class="icone-busca"><img src="imagens/lupa.png" alt="Buscar" style="width: 20px; height: 20px;"></span>
+          </div>
+          <div class="select-canal">
+            <select id="canalSelect">
+              <option value="">Explorar</option>
+              <option value="esporte">Esporte e Lazer</option>
+              <option value="comida">Alimentação</option>
+              <option value="roupa">Moda</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="letras-filtro">
+        <span data-letter="*">Todos</span>
+        <span data-letter="A">A</span>
+        <span data-letter="B">B</span>
+        <span data-letter="C">C</span>
+        <span data-letter="D">D</span>
+        <span data-letter="E">E</span>
+        <span data-letter="F">F</span>
+        <span data-letter="G">G</span>
+        <span data-letter="H">H</span>
+        <span data-letter="I">I</span>
+        <span data-letter="J">J</span>
+        <span data-letter="K">K</span>
+        <span data-letter="L">L</span>
+        <span data-letter="M">M</span>
+        <span data-letter="N">N</span>
+        <span data-letter="O">O</span>
+        <span data-letter="P">P</span>
+        <span data-letter="Q">Q</span>
+        <span data-letter="R">R</span>
+        <span data-letter="S">S</span>
+        <span data-letter="T">T</span>
+        <span data-letter="U">U</span>
+        <span data-letter="V">V</span>
+        <span data-letter="W">W</span>
+        <span data-letter="X">X</span>
+        <span data-letter="Y">Y</span>
+        <span data-letter="Z">Z</span>
+        <span data-letter="#">#</span>
+        <span data-letter="0">0</span>
+        <span data-letter="1">1</span>
+        <span data-letter="2">2</span>
+        <span data-letter="3">3</span>
+        <span data-letter="4">4</span>
+        <span data-letter="5">5</span>
+        <span data-letter="6">6</span>
+        <span data-letter="7">7</span>
+        <span data-letter="8">8</span>
+        <span data-letter="9">9</span>
+      </div>
+      
+    </div> 
+</section>
+  
+<section class="store-grid" id="storeGrid">
+  
+  <a href="https://www.abbraccio.com.br/" class="store-card" data-name="Abbraccio" data-canal="comida">
+    <img src="imagens/abbraccio.png" alt="Abbraccio">
+    <h3>Abbraccio</h3>
+    <p class="phone">+55 21 99999-9999</p>
+  </a>
+  
+  <a href="https://www.adidas.com.br" class="store-card" data-name="Adidas" data-canal="esporte">
+    <img src="imagens/adidas.jpeg" alt="Adidas">
+    <h3>Adidas</h3>
+    <p class="phone">+55 21 99999-9999</p>
+  </a>
+  
+  <a href="https://www.pizzahut.com.br" class="store-card" data-name="PizzaHut" data-canal="comida">
+    <img src="imagens/pizza-hut.jpg" alt="PizzaHut">
+    <h3>PizzaHut</h3>
+    <p class="phone">+55 21 99999-9999</p>
+  </a>
+  
+  <a href="https://www.nike.com.br" class="store-card" data-name="Nike" data-canal="esporte">
+    <img src="imagens/nike.jpg" alt="Nike">
+    <h3>Nike</h3>
+    <p class="phone">+55 21 99999-9999</p>
+  </a>
+  
+  <a href="https://www.cea.com.br" class="store-card" data-name="Cea" data-canal="roupa">
+    <img src="imagens/cea.png" alt="C&A">
+    <h3>C&A</h3>
+    <p class="phone">+55 21 99999-9999</p>
+  </a>
+  
+  <a href="https://www.lojasrenner.com.br" class="store-card" data-name="Renner" data-canal="roupa">
+    <img src="imagens/renner.png" alt="Renner">
+    <h3>Renner</h3>
+    <p class="phone">+55 21 99999-9999</p>
+  </a>
+
+</section>
+  
+<footer>
+    <div class="footer-container">
+        <div class="footer-social">
+            <h3>Acompanhe a gente nas redes sociais</h3>
+            <p>Fique por dentro das promoções e novidades em primeira mão!</p>
+            <div class="social-icons">
+                <img src="imagens/logobranca.png" alt="logo"><br>
+                <img src="imagens/Instagram.png" alt="Instagram" style="width: 50px; height: 50px;">
+                <img src="imagens/WhatsApp.png" alt="TikTok" style="width: 50px; height: 50px;">
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div class="column">
+                <h4>Acesso</h4>
+                <a href="#">Anuncie aqui</a>
+                <a href="#">Produtos</a>
+                <a href="#">Servilços</a>
+                <a href="#"></a>
+            </div>
+            <div class="column">
+                <h4>Contato</h4>
+                <a href="#">email@email.com</a>
+                <a href="#">@jeffbazar</a>
+                <a href="#">+55 (21)9999-9999</a>
+                <h4>Parceiros</h4>
+                <a href="#">parceiro1</a>
+                <a href="#">parceiro2</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <img src="imagens/logobranca.png" alt="Allos Logo">
+    </div>
+</footer>
+ 
+
+</body>
+</html>    
