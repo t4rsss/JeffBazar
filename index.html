@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Configuração de codificação e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Jeff Bazar</title>
+
+    <!-- Link para o CSS externo -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Script JavaScript carregado de forma assíncrona (após o HTML) -->
     <script defer src="script.js"></script>
 </head>
 <body>
+
+    <!-- Menu lateral (sidebar) -->
     <div class="sidebar" id="sidebar">
-        <img  src="imagens/logo.png" alt="Plaza Logo" style="width: 150px; height: auto;">
+        <img src="imagens/logo.png" alt="Plaza Logo" style="width: 150px; height: auto;">
         <h2>Menu</h2>
+
+        <!-- Botão para fechar o menu lateral -->
         <button class="close-btn" onclick="toggleSidebar()">✖</button>
+
+        <!-- Links do menu lateral -->
         <ul>
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="https://wa.me/5521965951620">Anuncie Aqui</a></li>
+            <li><a href="https://wa.me/5521987804559">Anuncie Aqui</a></li>
         </ul>
     </div>
+
+    <!-- Cabeçalho principal com logo, redes sociais e botão de menu -->
     <header>
-    <div class="transparent">
-        <div class="header-container">
-            <div class="logo">
-                <img class="logo1" src="imagens/logobranca.png" alt="Plaza Logo">
+        <div class="transparent">
+            <div class="header-container">
+                <!-- Logo do topo -->
+                <div class="logo">
+                    <img class="logo1" src="imagens/logobranca.png" alt="Plaza Logo">
+                </div>
+
+                <!-- Ícones do topo (Instagram, WhatsApp, Menu) -->
+                <div class="header-icons">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="imagens/Instagram.png" alt="Instagram" class="icon-header" style="width: 30px; height: 30px;">
+                    </a>
+                    <a href="https://wa.me/5521987804559" target="_blank">
+                        <img src="imagens/WhatsApp.png" alt="WhatsApp" class="icon-header" style="width: 35px; height: 35px;">
+                    </a>
+                    <div class="divider"></div>
+                    <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+                </div> 
             </div>
-            <div class="header-icons">
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="imagens/Instagram.png" alt="Instagram" class="icon-header" style="width: 30px; height: 30px;">
-                </a>
-                <a href="https://wa.me/5521965951620" target="_blank">
-                  <img src="imagens/WhatsApp.png" alt="WhatsApp" class="icon-header" style="width: 35px; height: 35px;">
-                </a>
-                  <div class="divider"></div>
-                  <span class="menu-icon" onclick="toggleSidebar()">☰</span>
-              </div> 
-        </div>
-    </div>    
+        </div>    
+
+        <!-- Banner com carrossel de imagens -->
         <div id="banner-container">
             <section id="banner">
                 <div class="carousel">
+                    <!-- Botão anterior -->
                     <button class="prev">&#10094;</button>
+
+                    <!-- Slides do banner -->
                     <div class="slide active">
-                        <img src="imagens/banner1.png" >
+                        <img src="imagens/banner1.png">
                     </div>
                     <div class="slide">
                         <img src="imagens/banner2.png">
@@ -50,37 +73,49 @@
                     <div class="slide">
                         <img src="imagens/banner3.png">
                     </div>
+
+                    <!-- Botão próximo -->
                     <button class="next">&#10095;</button>
                 </div>
             </section>
         </div>    
     </header>  
+
+    <!-- Conteúdo principal -->
     <main>
+        <!-- (Espaço reservado para clima, se for usar JavaScript futuramente) -->
         <section id="weather-status"></section>
 
+        <!-- Seção com links rápidos para páginas -->
         <section id="quick-links">            
             <a href="produtos.html" class="link-card">
-              <img src="imagens/Shopping Cart.png" alt="Produtos" class="icon-quick-links">
-              <span class="link-text">Produtos</span>
+                <img src="imagens/Shopping Cart.png" alt="Produtos" class="icon-quick-links">
+                <span class="link-text">Produtos</span>
             </a>
             
             <a href="servicos.html" class="link-card">
-              <img src="imagens/Shop.png" alt="Serviços" class="icon-quick-links">
-              <span class="link-text">Serviços</span>
+                <img src="imagens/Shop.png" alt="Serviços" class="icon-quick-links">
+                <span class="link-text">Serviços</span>
             </a>
             
-            <a href="https://wa.me/5521965951620" class="link-card">
-              <img src="imagens/Speaker.png" alt="Anuncie Já" class="icon-quick-links">
-              <span class="link-text">Anuncie Já</span>
+            <a href="https://wa.me/5521987804559" class="link-card">
+                <img src="imagens/Speaker.png" alt="Anuncie Já" class="icon-quick-links">
+                <span class="link-text">Anuncie Já</span>
             </a>
-          </section>
-          
+        </section>
     </main>
+
+    <!-- Seção de destaques (ex: promoções ou campanhas) -->
     <section id="highlights">
         <h2>Destaques</h2>
+
         <div class="highlights-container">
+            <!-- Botão anterior do carrossel de destaques -->
             <button class="prev-highlights">&#10094;</button>
+
+            <!-- Slides dos destaques -->
             <div class="highlight-slide active">
+                <!-- Cartões de destaque -->
                 <div class="highlight-card">
                     <img src="imagens/anuncie.gif" alt="Promoção 1">
                     <div class="highlight-info">
@@ -89,6 +124,8 @@
                         <a href="#">Saiba mais ➝</a>
                     </div>
                 </div>
+
+                <!-- Repete outros cards -->
                 <div class="highlight-card">
                     <img src="imagens/anuncie.gif" alt="Benefícios">
                     <div class="highlight-info">
@@ -97,6 +134,7 @@
                         <a href="#">Saiba mais ➝</a>
                     </div>
                 </div>
+
                 <div class="highlight-card">
                     <img src="imagens/anuncie.gif" alt="JBL Promoção">
                     <div class="highlight-info">
@@ -105,6 +143,7 @@
                         <a href="#">Saiba mais ➝</a>
                     </div>
                 </div>
+
                 <div class="highlight-card">
                     <img src="imagens/anuncie.gif" alt="JBL Promoção">
                     <div class="highlight-info">
@@ -113,6 +152,7 @@
                         <a href="#">Saiba mais ➝</a>
                     </div>
                 </div>
+
                 <div class="highlight-card">
                     <img src="imagens/anuncie.gif" alt="JBL Promoção">
                     <div class="highlight-info">
@@ -122,8 +162,12 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Botão próximo do carrossel -->
             <button class="next-highlights">&#10095;</button>
         </div>
+
+        <!-- Indicadores de rolagem -->
         <div class="dots-container">
             <span class="dot active"></span>
             <span class="dot"></span>
@@ -131,8 +175,11 @@
         </div>
     </section>
     
+    <!-- Rodapé do site -->
     <footer>
         <div class="footer-container">
+
+            <!-- Coluna com redes sociais -->
             <div class="footer-social">
                 <h3>Acompanhe a gente nas redes sociais</h3>
                 <p>Fique por dentro das promoções e novidades em primeira mão!</p>
@@ -142,27 +189,31 @@
                     <img src="imagens/WhatsApp.png" alt="TikTok" style="width: 50px; height: 50px;">
                 </div>
             </div>
-    
+
+            <!-- Coluna com links úteis -->
             <div class="footer-links">
                 <div class="column">
                     <h4>Acesso</h4>
-                    <a href="#">Anuncie aqui</a>
-                    <a href="#">Produtos</a>
-                    <a href="#">Servilços</a>
+                    <a href="https://wa.me/5521987804559">Anuncie aqui</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="servicos.html">Servilços</a>
                     <a href="#"></a>
                 </div>
+
                 <div class="column">
                     <h4>Contato</h4>
                     <a href="#">email@email.com</a>
                     <a href="#">@jeffbazar</a>
-                    <a href="#">+55 (21)9999-9999</a>
+                    <a href="#">+55 (21)98780-4559</a>
+
                     <h4>Parceiros</h4>
                     <a href="#">parceiro1</a>
                     <a href="#">parceiro2</a>
                 </div>
             </div>
         </div>
-    
+
+        <!-- Base do rodapé com logo da empresa -->
         <div class="footer-bottom">
             <img src="imagens/logobranca.png" alt="Allos Logo">
         </div>

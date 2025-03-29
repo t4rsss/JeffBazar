@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Metadados da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page - Jeff Bazar</title>
+
+    <!-- Importação de CSS e fontes -->
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Script JS adicionado com defer para carregar após o HTML -->
     <script defer src="script.js"></script>
 </head>
 <body>
+
+  <!-- Sidebar lateral com menu e botão de fechar -->
   <div class="sidebar" id="sidebar">
     <img  src="imagens/logo.png" alt="Plaza Logo" style="width: 150px; height: auto;">
     <h2>Menu</h2>
@@ -16,46 +23,55 @@
     <ul>
         <li><a href="produtos.html">Produtos</a></li>
         <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="https://wa.me/5521965951620">Anuncie Aqui</a></li>
+        <li><a href="https://wa.me/5521987804559">Anuncie Aqui</a></li>
     </ul>
-</div>
-    <div class="header2">
-      <div class="transparent">
-          <div class="header-container">
-              <div class="logo">
-                <a href="index.html">
-                  <img class="logo1" src="imagens/logobranca.png" alt="Plaza Logo">
-                </a>              
-              </div>
-              <div class="header-icons">
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img src="imagens/Instagram.png" alt="Instagram" class="icon-header" style="width: 30px; height: 30px;">
-                </a>
-                <a href="https://wa.me/5521965951620" target="_blank">
-                  <img src="imagens/WhatsApp.png" alt="WhatsApp" class="icon-header" style="width: 35px; height: 35px;">
-                </a>
-                  <div class="divider"></div>
-                  <span class="menu-icon" onclick="toggleSidebar()">☰</span>
-              </div> 
-          </div>
-      </div> 
   </div>
 
-<div class="breadcrumb-section">
+  <!-- Início do cabeçalho com logo, ícones e menu -->
+  <div class="header2">
+    <div class="transparent">
+        <div class="header-container">
+            <div class="logo">
+              <a href="index.html">
+                <img class="logo1" src="imagens/logobranca.png" alt="Plaza Logo">
+              </a>              
+            </div>
+            <div class="header-icons">
+              <!-- Ícones de redes sociais -->
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="imagens/Instagram.png" alt="Instagram" class="icon-header" style="width: 30px; height: 30px;">
+              </a>
+              <a href="https://wa.me/5521987804559" target="_blank">
+                <img src="imagens/WhatsApp.png" alt="WhatsApp" class="icon-header" style="width: 35px; height: 35px;">
+              </a>
+              <div class="divider"></div>
+              <!-- Botão do menu lateral -->
+              <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+            </div> 
+        </div>
+    </div> 
+  </div>
+
+  <!-- Breadcrumb / Caminho de navegação -->
+  <div class="breadcrumb-section">
     <nav class="breadcrumb">
       <a href="index.html">Página Inicial</a> <span>›</span> <span class="active">Produtos</span>
     </nav>
     <h1 class="page-title">Produtos</h1>
   </div>
   
+  <!-- Seção de filtros: busca e categorias -->
   <section class="lojas-filtro">
     <div class="container">
       <div class="dark-box">
         <div class="filtros">
+          <!-- Campo de busca -->
           <div class="input-busca">
             <input id="searchInput" type="text" placeholder="Busque por nome" />
             <span class="icone-busca"><img src="imagens/lupa.png" alt="Buscar" style="width: 20px; height: 20px;"></span>
           </div>
+
+          <!-- Filtro por canal -->
           <div class="select-canal">
             <select id="canalSelect">
               <option value="">Explorar</option>
@@ -66,6 +82,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Filtro por letras -->
       <div class="letras-filtro">
         <span data-letter="*">Todos</span>
         <span data-letter="A">A</span>
@@ -106,51 +124,60 @@
         <span data-letter="8">8</span>
         <span data-letter="9">9</span>
       </div>
-      
     </div> 
-</section>
+  </section>
   
-<section class="store-grid" id="storeGrid">
-  
-  <a href="https://www.abbraccio.com.br/" class="store-card" data-name="Abbraccio" data-canal="comida">
-    <img src="imagens/abbraccio.png" alt="Abbraccio">
-    <h3>Abbraccio</h3>
-    <p class="phone">+55 21 99999-9999</p>
-  </a>
-  
-  <a href="https://www.adidas.com.br" class="store-card" data-name="Adidas" data-canal="esporte">
-    <img src="imagens/adidas.jpeg" alt="Adidas">
-    <h3>Adidas</h3>
-    <p class="phone">+55 21 99999-9999</p>
-  </a>
-  
-  <a href="https://www.pizzahut.com.br" class="store-card" data-name="PizzaHut" data-canal="comida">
-    <img src="imagens/pizza-hut.jpg" alt="PizzaHut">
-    <h3>PizzaHut</h3>
-    <p class="phone">+55 21 99999-9999</p>
-  </a>
-  
-  <a href="https://www.nike.com.br" class="store-card" data-name="Nike" data-canal="esporte">
-    <img src="imagens/nike.jpg" alt="Nike">
-    <h3>Nike</h3>
-    <p class="phone">+55 21 99999-9999</p>
-  </a>
-  
-  <a href="https://www.cea.com.br" class="store-card" data-name="Cea" data-canal="roupa">
-    <img src="imagens/cea.png" alt="C&A">
-    <h3>C&A</h3>
-    <p class="phone">+55 21 99999-9999</p>
-  </a>
-  
-  <a href="https://www.lojasrenner.com.br" class="store-card" data-name="Renner" data-canal="roupa">
-    <img src="imagens/renner.png" alt="Renner">
-    <h3>Renner</h3>
-    <p class="phone">+55 21 99999-9999</p>
-  </a>
+  <!-- Grade de lojas (cards de empresas) -->
+  <section class="store-grid" id="storeGrid">
 
-</section>
+    <!-- Cada loja como link clicável com dados para filtro, para alterar mude o href para o link desejado , 
+     o data-name para a o nome da loja , e o data-canal para o filtro de setores -->
+    
+    <a href="https://www.abbraccio.com.br/" class="store-card" data-name="Abbraccio" data-canal="comida" target="_blank">
+      <img src="imagens/abbraccio.png" alt="Abbraccio">
+      <h3>Abbraccio</h3>
+      <p class="decricao">+55 21 99999-9999</p>
+    </a>
+
+
+    <a href="https://www.adidas.com.br" class="store-card" data-name="Adidas" data-canal="esporte" target="_blank">
+      <img src="imagens/adidas.jpeg" alt="Adidas">
+      <h3>Adidas</h3>
+      <p class="decricao">+55 21 99999-9999</p>
+    </a>
+
+
+    <a href="https://www.pizzahut.com.br" class="store-card" data-name="PizzaHut" data-canal="comida" target="_blank">
+      <img src="imagens/pizza-hut.jpg" alt="PizzaHut">
+      <h3>PizzaHut</h3>
+      <p class="decricao">+55 21 99999-9999</p>
+    </a>
+
+
+    <a href="https://www.nike.com.br" class="store-card" data-name="Nike" data-canal="esporte" target="_blank">
+      <img src="imagens/nike.jpg" alt="Nike">
+      <h3>Nike</h3>
+      <p class="decricao">+55 21 99999-9999</p>
+    </a>
+
+
+    <a href="https://www.cea.com.br" class="store-card" data-name="Cea" data-canal="roupa" target="_blank">
+      <img src="imagens/cea.png" alt="C&A">
+      <h3>C&A</h3>
+      <p class="decricao">+55 21 99999-9999</p>
+    </a>
+
+
+    <a href="https://www.lojasrenner.com.br" class="store-card" data-name="Renner" data-canal="roupa" target="_blank">
+      <img src="imagens/renner.png" alt="Renner">
+      <h3>Renner</h3>
+      <p class="decricao">+55 21 99999-9999</p>
+    </a>
+ 
+  </section>
   
-<footer>
+  <!-- Rodapé com informações e redes sociais -->
+  <footer>
     <div class="footer-container">
         <div class="footer-social">
             <h3>Acompanhe a gente nas redes sociais</h3>
@@ -164,17 +191,17 @@
 
         <div class="footer-links">
             <div class="column">
-                <h4>Acesso</h4>
-                <a href="#">Anuncie aqui</a>
-                <a href="#">Produtos</a>
-                <a href="#">Servilços</a>
-                <a href="#"></a>
-            </div>
+              <h4>Acesso</h4>
+              <a href="https://wa.me/5521987804559">Anuncie aqui</a>
+              <a href="produtos.html">Produtos</a>
+              <a href="servicos.html">Servilços</a>
+              <a href="#"></a>
+         </div>
             <div class="column">
                 <h4>Contato</h4>
                 <a href="#">email@email.com</a>
                 <a href="#">@jeffbazar</a>
-                <a href="#">+55 (21)9999-9999</a>
+                <a href="#">+55 (21)98780-4559</a>
                 <h4>Parceiros</h4>
                 <a href="#">parceiro1</a>
                 <a href="#">parceiro2</a>
@@ -182,11 +209,11 @@
         </div>
     </div>
 
+    <!-- Base do rodapé com logo -->
     <div class="footer-bottom">
         <img src="imagens/logobranca.png" alt="Allos Logo">
     </div>
-</footer>
- 
+  </footer>
 
 </body>
-</html>    
+</html>
