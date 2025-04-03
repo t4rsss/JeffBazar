@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSlide(index) {
         slides.forEach((slide, i) => {
             slide.classList.remove("active");
-            slide.style.opacity = "0"; 
+            slide.style.opacity = "0";
         });
 
         slides[index].classList.add("active");
@@ -27,7 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     showSlide(currentIndex);
+
+    // 👉 autoplay a cada 5 segundos
+    setInterval(function () {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }, 5000); // 5000ms = 5 segundos
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".highlight-slide");
@@ -117,4 +124,5 @@ document.addEventListener("DOMContentLoaded", function () {
     // Filtro por canal (select)
     canalSelect.addEventListener('change', aplicarTodosOsFiltros);
   });
+  
   
