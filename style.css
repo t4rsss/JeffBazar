@@ -100,6 +100,8 @@ main {
     background-color:rgba(255, 255, 255, 0.05) ;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
+    margin: 0 auto;
+    height: 100px;
 }
 
 
@@ -120,27 +122,27 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     height: 100px;
-    margin: 0 auto;
     overflow: hidden;
     min-width: 320px;
-    padding: 0 24px 0 24px;
+    margin: 0 auto;
 }
     
 
 .header-icons {
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 24px;
+  margin-left: auto; /* empurra a div para o canto direito */
 }
+
 
 .header-icons span {
     cursor: pointer;
     font-size: 25px;
     color: white;
 }
+
 
 .divider {
     height: 20px;
@@ -152,7 +154,7 @@ header {
 .logo1 {
     max-width: 280px; /* Reduz o tamanho da logo */
     height: auto;
-    align-self: center; /* Centraliza a logo dentro da header */
+    align-self: center;
 }
 
 /* Banner */
@@ -700,13 +702,16 @@ footer {
     }
     
     .logo{
-    padding-left: 10px;    
+    padding-left: 10px;
+    padding-top: 40px;    
     }
 
     .header-icons {
-      gap: 5px;
-      justify-content: center;
-      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      margin-left: auto; /* empurra a div para o canto direito */
+      padding-top: 40px;
+      padding-right: 70px;
     }
   
     #banner {
@@ -785,9 +790,6 @@ footer {
         margin-top:10px ;
       }
   
-    .store-card {
-      width: 80%;
-    }
   
     .footer-container {
       flex-direction: column;
@@ -836,14 +838,23 @@ footer {
     .logo1 {
       max-width: 160px;
     }
-  
-    .header-icons img {
-      width: 28px;
-      height: 28px;
+
+    .header-icons {
+      display: flex;
+      align-items: center;
+      margin-left: auto; /* empurra a div para o canto direito */
+      padding-top: 40px;
+      padding-right: 70px;
     }
   
     .menu-icon {
       font-size: 24px;
     }
+
+    .logo{
+      padding-left: 10px;
+      padding-top: 40px;    
+      }
+
   }
   
