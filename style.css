@@ -13,22 +13,20 @@ main {
     flex: 1;
 }
 
-/* Sidebar oculta inicialmente (fora da tela) */
 .sidebar {
     position: fixed;
-    right: -400px; /* Escondida fora da tela */
+    right: -400px; 
     top: 0;
     width: 300px;
     height: 100%;
-    background:white; /* Degradê da esquerda para a direita */
+    background:white; 
     color: #1f1f1f;
     box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.5);
     padding: 20px;
-    transition: right 0.4s ease-in-out; /* Transição suave */
-    z-index: 9999; /* Garante que fica por cima de tudo */
+    transition: right 0.4s ease-in-out; 
+    z-index: 9999; 
 }
 
-/* Quando ativa, aparece na tela */
 .sidebar.active {
     right: 0;
 }
@@ -79,8 +77,6 @@ main {
     margin-bottom: 20px;
 }
 
-
-
 /* Botão de abrir menu */
 .menu-toggle {
     position: fixed;
@@ -95,7 +91,6 @@ main {
 }
 
 
-
 .transparent{
     background-color:rgba(255, 255, 255, 0.05) ;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -103,7 +98,6 @@ main {
     margin: 0 auto;
     height: 100px;
 }
-
 
 
 header {
@@ -630,17 +624,19 @@ footer {
   
 .store-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* duas colunas por linha */
-    gap: 20px; /* espaço entre os cards */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
     background-color: #f5f5f5;
-    margin-bottom: 60px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 20px;
+    
   }
   
 
   .store-card {
+    padding-top: 20px;
     background: white;
     border-radius: 8px;
     text-align: center;
@@ -648,7 +644,6 @@ footer {
     transition: transform 0.3s ease;     
     width: 100%;
     height: 250px;           
-    margin: 0 ;
     text-decoration: none;     
     color: inherit;            
     cursor: pointer;      
@@ -741,7 +736,9 @@ footer {
     }
   
     .link-card img {
-      margin: 0;
+      width: auto;
+      height: 100px;
+      margin-bottom: 15px;
     }
   
     #highlights {
@@ -795,8 +792,9 @@ footer {
       }
 
       .store-card img {
-        width: 80%;
-        height: auto;
+        width: auto;
+        height: 100px;
+        margin-bottom: 15px;
       }
   
   
@@ -837,7 +835,6 @@ footer {
   
     header {
       height: auto;
-      padding: 30px 0;
       background-size: cover;
       background-position: center;
     }
@@ -851,7 +848,7 @@ footer {
       align-items: center;
       margin-left: auto; /* empurra a div para o canto direito */
       padding-top: 40px;
-      padding-right: 70px;
+      padding-right: 50px;
     }
   
     .menu-icon {
@@ -859,9 +856,9 @@ footer {
     }
 
     .logo{
-      padding-left: 10px;
+      padding-left: 30px;
       padding-top: 40px;    
-      }
+    }
 
       .store-grid {
         display: grid;
@@ -873,6 +870,86 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
       }
+
+      .breadcrumb {
+        font-size: 14px;
+        color: #175676;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-left: 10px;
+      }
+      
+      .link-card {
+        width: 75%;
+        height: 40%;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+      }
+    
+      .link-card img {
+        width: auto;
+        height: 40px;
+        margin-bottom: 15px;
+      }
+
+      #highlights {
+        padding: 30px 5px 6px 25px;
+        
+      }
+    
+      .highlights-container {
+        flex-direction: row;
+        height: auto;
+        gap: 6px;
+        height: 50%;
+        margin: 0 auto;
+      }
+    
+      .highlight-card {
+        width: 150px;
+        height: 200px;
+      }
+
+      .highlight-card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .highlight-info {
+        padding: 10px;
+        text-align: left;
+    }
+    
+    .highlight-info .tag {
+        background: #175676;
+        color: white;
+        font-size: 11px;
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-weight: bold;
+    
+    }
+    
+    .highlight-info h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+   h2 {
+      font-size: 25px;
+      margin: 10px 0;
+      text-align: left;
+  }
+    
+    .highlight-info a {
+        text-decoration: none;
+        color: #175676;
+        font-weight: bold;
+    }
+
 
   }
   
