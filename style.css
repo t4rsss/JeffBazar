@@ -916,7 +916,7 @@ footer {
       }
     
       .highlight-card {
-        width: 200px;
+        width: 48%;
         height: 200px;
       }
 
@@ -963,7 +963,7 @@ footer {
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
       justify-content: center;
-      gap: 50px;
+      gap: 10px;
       margin: 0  auto;
     }
 
