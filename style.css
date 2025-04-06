@@ -311,7 +311,7 @@ header {
 .highlight-slide {
   display: none;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out, opacity 0.3s ease;
   justify-content: center;
   gap: 120px;
   margin: 0  auto;
@@ -615,7 +615,7 @@ footer {
   
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1220px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -638,11 +638,10 @@ footer {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 20px;
-    
+    padding: 10px;
+    margin-bottom: 20px;
   }
   
-
   .store-card {
     padding-top: 20px;
     background: white;
@@ -877,6 +876,8 @@ footer {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
       }
 
       .breadcrumb {

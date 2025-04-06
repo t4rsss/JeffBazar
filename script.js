@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(function () {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
-    }, 5000); // 5000ms = 5 segundos
+    }, 9000); // 9000ms = 9 segundos
 });
 
 
@@ -77,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(currentIndex);
 
-  // Autoplay a cada 5 segundos
+  // Autoplay a cada 10 segundos
   setInterval(function () {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
-  }, 9000);
+  }, 10000);
 });
 
   
