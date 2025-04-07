@@ -783,19 +783,12 @@ footer {
       align-items: center;
     }
   
-    .store-grid {
-        grid-template-columns: repeat(1, 1fr); /* duas colunas por linha */
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top:10px ;
-      }
-
       .store-card {
         width: 80%;
         margin-bottom: 20px;
         margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
 
       .store-card img {
@@ -834,7 +827,7 @@ footer {
     
   }
   
-  @media screen and (max-width: 1366px) {
+  @media screen and (max-width: 1066px) {
     .header-container {
       max-width: 100%;
       height: auto;
