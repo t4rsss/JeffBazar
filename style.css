@@ -128,6 +128,7 @@ header {
   display: flex;
   align-items: center;
   margin-left: auto; /* empurra a div para o canto direito */
+  
 }
 
 
@@ -760,11 +761,10 @@ footer {
     }
   
     .highlight-card {
-      width: 200px;
+      width: 150px;
       height: 200px;
       margin: 10px;
     }
-
   
     .filtros {
       flex-direction: column;
@@ -857,7 +857,7 @@ footer {
       padding-top: 40px;
       padding-right: 50px;
     }
-
+  
 
     .logo{
       padding-left: 30px;
@@ -915,12 +915,15 @@ footer {
     
       .highlight-card {
         width: 48%;
-        height: 200px;
+        height: 230px;
+        margin-bottom: 10px;
+        margin-top: 10px;
       }
 
       .highlight-card img {
         width: 100%;
         height: auto;
+        max-height: 150px;
     }
     
     .highlight-info {
@@ -964,6 +967,21 @@ footer {
       gap: 10px;
       margin: 0  auto;
     }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(175, 175, 175, 0.0);
+      color: rgba(175, 175, 175, 0.1);
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      z-index: 10;
+      font-size: 30px;
+  }
+  
+
 
 
   }
