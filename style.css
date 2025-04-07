@@ -522,7 +522,8 @@ footer {
     color: #175676;
     margin-bottom: 10px;
     padding-top: 20px;
-    padding-left: 150px;
+    padding-left: 20px;
+    text-align: left;
   }
   
   .breadcrumb a {
@@ -876,6 +877,7 @@ footer {
         margin-bottom: 10px;
         padding-top: 20px;
         padding-left: 10px;
+        text-align: left;
       }
       
       .link-card {
