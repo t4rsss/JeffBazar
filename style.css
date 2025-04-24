@@ -717,13 +717,27 @@ footer {
       padding-top: 40px;
       padding-right: 70px;
     }
-  
-    #banner {
-      height: 150px;
+    
+
+    #banner-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      overflow: hidden;
+      margin-bottom: -30px;
     }
+
+    #banner {
+      width: 100%; 
+      }
   
     .slide img {
       width: 100%;
+      max-width: 400px;
+      height: auto;
     }
   
     #quick-links {
